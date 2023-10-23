@@ -54,7 +54,7 @@ export default function Workspace() {
   }, [getWorkspace]);
 
   const showTabs = !workspace?.kendraIndexExternal;
-  const disabledTabs = workspace?.engine === "kendra" ? ["qna", "website"] : [];
+  const disabledTabs = workspace?.engine === "kendra" ? [] : ["qna", "website"];
 
   return (
     <BaseAppLayout
